@@ -29,6 +29,14 @@ function upgradingNPM {
 }
 upgradingNPM
 
+function upgradingMySQL {
+    wget http://dev.mysql.com/get/mysql-apt-config_0.7.3-1_all.deb
+    dpkg -i mysql-apt-config_0.7.3-1_all.deb
+    sudo apt-get update
+    sudo apt-get install mysql-server -y
+}
+upgradingMySQL
+
 function craftProject {
     rm README.md php.ini hello-world.php
     sudo composer global require 'laravel/installer'
