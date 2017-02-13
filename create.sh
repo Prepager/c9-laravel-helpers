@@ -1,26 +1,40 @@
 #!/bin/bash
 
 function upgradingPhp {
-    sudo add-apt-repository ppa:ondrej/php
-    sudo apt-get update
-    sudo apt-get install libapache2-mod-php7.0
+    sudo add-apt-repository ppa:ondrej/php -y
+    sudo apt-get update -y
+    sudo apt-get install libapache2-mod-php7.0 -y
     sudo a2dismod php5
     sudo a2enmod php7.0
-    sudo apt-get install php7.0-dom
-    sudo apt-get install php7.0-mbstring
-    sudo apt-get install php7.0-zip
+    sudo apt-get install php7.0-dom -y
+    sudo apt-get install php7.0-mbstring -y
+    sudo apt-get install php7.0-zip -y
     
-    sudo apt-get install php7.0-mysql
-    sudo apt-get install php7.0-sqlite
+    sudo apt-get install php7.0-mysql -y
+    sudo apt-get install php7.0-sqlite -y
     
 }
 upgradingPhp
+
+function upgradingNode {
+    source "$NVM_DIR/nvm.sh"
+    
+    nvm install stable
+    nvm alias default stable
+}
+upgradingNode
+
+function upgradingNPM {
+    sudo npm i npm -g
+}
+upgradingNPM
 
 function craftProject {
     rm README.md php.ini hello-world.php
     sudo composer global require 'laravel/installer'
     export PATH=~/.composer/vendor/bin:$PATH
     laravel new laravel
+    shopt -s dotglob
     mv laravel/* ./
     rm -rf laravel
 }
@@ -46,6 +60,5 @@ editFile
 
 function mySQL {
     mysql-ctl cli
-
 }
 mySQL
