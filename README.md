@@ -3,8 +3,9 @@ This bash script makes creating a Laravel project on Cloud9 more easier for deve
 
 ### How to use
 - Create a PHP workspace on Cloud9, add the file to the root of your PHP project directory.
-- Make the bash script executable by running this command like so: **chmod +x create.sh**.
-- Finally you craft the Laravel project by executing this command: **./create.sh**.
+- Make the bash script executable by running this command like so: **chmod +x create.sh**
+- Craft the Laravel project by executing this command: **./create.sh**
+- Change Node version by executing this command: **nvm alias default stable**
 
 ### What it does
 After executing the command, the following happens:
