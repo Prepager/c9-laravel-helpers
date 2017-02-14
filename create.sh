@@ -30,6 +30,7 @@ function upgradingNPM {
 upgradingNPM
 
 function upgradingMySQL {
+    mysql-ctl start
     wget http://dev.mysql.com/get/mysql-apt-config_0.7.3-1_all.deb
     sudo dpkg -i mysql-apt-config_0.7.3-1_all.deb
     sudo apt-get update
@@ -65,8 +66,3 @@ ServerName https://\${C9_HOSTNAME}
 # vim: syntax=apache ts=4 sw=4 sts=4 sr noet" > /etc/apache2/sites-enabled/001-cloud9.conf'
 }
 editFile
-
-function mySQL {
-    mysql-ctl cli
-}
-mySQL
