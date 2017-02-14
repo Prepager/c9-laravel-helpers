@@ -35,6 +35,7 @@ function upgradingMySQL {
     sudo dpkg -i mysql-apt-config_0.7.3-1_all.deb
     sudo apt-get update
     sudo apt-get install mysql-server -y
+    rm mysql-apt-config_0.7.3-1_all.deb
 }
 upgradingMySQL
 
