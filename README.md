@@ -16,7 +16,6 @@ After executing the command, the following happens:
 - Node and NPM is upgraded to the newest stable version.
 - Laravel is installed and a new Laravel project is created for you.
 - **/public** is added to **DocumentRoot /home/ubuntu/workspace/** so it becomes *DocumentRoot /home/ubuntu/workspace/__public__*
-- MySQL Command *__(mysql-ctl cli)__* tool is executed.
 
 #### Note:
 This is an edit of [bootstrap-laravel-5.4-on-c9](https://github.com/nanichang/bootstrap-laravel-5.4-on-c9) that is based off [Ohssie's Page](https://github.com/Ohssie/Crafting-a-Laravel-project-on-C9)
