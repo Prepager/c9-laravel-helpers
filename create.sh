@@ -16,14 +16,6 @@ function upgradingPhp {
 }
 upgradingPhp
 
-function upgradingNode {
-    source "$NVM_DIR/nvm.sh"
-    
-    nvm install stable
-    nvm alias default stable
-}
-upgradingNode
-
 function upgradingNPM {
     sudo npm i npm -g
 }
