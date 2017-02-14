@@ -66,3 +66,5 @@ ServerName https://\${C9_HOSTNAME}
 # vim: syntax=apache ts=4 sw=4 sts=4 sr noet" > /etc/apache2/sites-enabled/001-cloud9.conf'
 }
 editFile
+
+rm -- "$0"
