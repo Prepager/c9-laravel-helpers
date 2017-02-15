@@ -9,7 +9,7 @@ function upgradingPhp {
     sudo apt-get install php7.0-dom -y
     sudo apt-get install php7.0-mbstring -y
     sudo apt-get install php7.0-zip -y
-    
+    sudo apt-get install php7.0-curl -y
     sudo apt-get install php7.0-mysql -y
     sudo apt-get install php7.0-sqlite -y
     
