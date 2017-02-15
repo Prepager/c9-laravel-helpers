@@ -8,6 +8,7 @@ This bash script updates all the necessary dependencies for running Laravel 5.4+
 - Run the bash script by running this: ``./upgrade-build.sh``
 - Select the following options for the MySQL upgrade: ``5.6 ... 5.7 ... ok``
 - Update the NodeJS version by running this: ``nvm install stable && nvm alias default stable``
+- Add Laravel to the path by running this: ``export PATH=~/.composer/vendor/bin:$PATH``
 
 ### 2) Create Build (create-build.sh)
 This bash script does the same as the above but also initialize a new Laravel project.
@@ -16,6 +17,7 @@ This bash script does the same as the above but also initialize a new Laravel pr
 - Run the bash script by running this: ``./create-build.sh``
 - Select the following options for the MySQL upgrade: ``5.6 ... 5.7 ... ok``
 - Update the NodeJS version by running this: ``nvm install stable && nvm alias default stable``
+- Add Laravel to the path by running this: ``export PATH=~/.composer/vendor/bin:$PATH``
 
 ### 3) Spark Build (spark-build.sh)
 This bash script downloads the spark-installer and adds it to the path. The upgrade or create build must be executed first.
