@@ -22,6 +22,7 @@ This bash script downloads the spark-installer and adds it to the path. The upgr
 - Download Build: ``wget -O spark-build.sh https://raw.githubusercontent.com/ZapsterStudios/c9-laravel-helpers/master/spark-build.sh``
 - Make the bash script executable by running this: ``chmod +x spark-build.sh``
 - Run the bash script by running this: ``./spark-build.sh``
+- Add Spark to the path by running this: ``export PATH=$PATH:/home/ubuntu/workspace/installers/spark-installer``
 
 #### Credits
 This is an edit of [bootstrap-laravel-5.4-on-c9](https://github.com/nanichang/bootstrap-laravel-5.4-on-c9) that is based off [Crafting-a-Laravel-project-on-C9](https://github.com/Ohssie/Crafting-a-Laravel-project-on-C9).
