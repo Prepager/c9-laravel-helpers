@@ -3,7 +3,7 @@ These bash scripts help you easily deploy Laravel 5.4+ projects on Cloud9.
 
 ### 1) Update Build (upgrade-build.sh)
 This bash script updates all the necessary dependencies for running Laravel 5.4+ (PHP, MySQL, NPM and NodeJS).
-- Download Build: ``wget -O upgrade-build.sh https://raw.githubusercontent.com/ZapsterStudios/c9-laravel-helpers/master/create-build.sh``
+- Download Build: ``wget -O upgrade-build.sh https://raw.githubusercontent.com/ZapsterStudios/c9-laravel-helpers/master/upgrade-build.sh``
 - Make the bash script executable by running this: ``chmod +x upgrade-build.sh``
 - Run the bash script by running this: ``./upgrade-build.sh``
 - Select the following options for the MySQL upgrade: ``5.6 ... 5.7 ... ok``
