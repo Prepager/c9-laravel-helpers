@@ -31,6 +31,13 @@ function upgradingMySQL {
 }
 upgradingMySQL
 
+function craftProject {
+    rm README.md php.ini hello-world.php
+    sudo composer global require 'laravel/installer'
+    export PATH=~/.composer/vendor/bin:$PATH
+}
+craftProject
+
 function editFile {
     sudo sh -c 'echo "<VirtualHost *:8080>
     DocumentRoot /home/ubuntu/workspace/public
