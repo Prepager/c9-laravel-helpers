@@ -31,9 +31,10 @@ This bash script downloads the spark-installer and adds it to the path. The upgr
 - Open the config file by running this: ``sudo nano /etc/apache2/sites-enabled/001-cloud9.conf``
 - Restart Apache by running this: ``service apache2 restart``
 
-#### Install PHPMyAdmin
-- Install by running this: ``phpmyadmin-ctl install``
-
+#### Install DBNinja
+- Navigate to the applications public folder: ``cd public``
+- Install the compressed file by running this: ``wget http://dbninja.com/download/dbninja.tar.gz``
+- Uncompress the file by running this: ``tar -xvf dbninja.tar.gz``
 =====
 
 #### Credits
