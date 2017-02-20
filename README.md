@@ -35,6 +35,7 @@ This bash script downloads the spark-installer and adds it to the path. The upgr
 - Navigate to the applications public folder: ``cd public``
 - Install the compressed file by running this: ``wget http://dbninja.com/download/dbninja.tar.gz``
 - Uncompress the file by running this: ``tar -xvf dbninja.tar.gz``
+
 =====
 
 #### Credits
