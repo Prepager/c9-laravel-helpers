@@ -6,6 +6,7 @@ function upgradingPhp {
     sudo apt-get install libapache2-mod-php7.0 -y
     sudo a2dismod php5
     sudo a2enmod php7.0
+    sudo apt-get install php7.0-gd -y
     sudo apt-get install php7.0-dom -y
     sudo apt-get install php7.0-mbstring -y
     sudo apt-get install php7.0-zip -y
